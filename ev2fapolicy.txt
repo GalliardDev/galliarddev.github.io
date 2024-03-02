@@ -1,0 +1,4 @@
+======= EV 2FA Auto Fill =======
+No se recoge ningún dato personal
+de ningún usuario que utilice la 
+extensión.
