@@ -38,3 +38,10 @@ function setHeaderColor() {
         header.classList.add(getRandomElement(array));
     });
 }
+
+async function setPfp() {
+    const response = await fetch('https://api.github.com/users/GalliardDev');
+    const data = await response.json();
+    const pfp = document.getElementById('pfp');
+    pfp.src = data.avatar_url;
+}
