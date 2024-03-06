@@ -20,3 +20,21 @@ function contasocListener() {
             });
     });
 }
+
+function getRandomElement(array) {
+    return array[Math.floor(Math.random() * array.length)];
+}
+
+function setHeaderColor() {
+    document.addEventListener('DOMContentLoaded', () => {
+        let header = document.getElementById('header');
+        let array = ['bg-primary', 'bg-success', 'bg-danger', 'bg-warning', 'bg-info'];
+        let classList = header.classList;
+        classList.forEach(className => {
+            if (array.includes(className)) {
+                header.classList.remove(className);
+            }
+        });
+        header.classList.add(getRandomElement(array));
+    });
+}
