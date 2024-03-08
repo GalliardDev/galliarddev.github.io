@@ -1,6 +1,43 @@
-.bg-primary,
-.btn-primary,
-.badge-primary,
-.alert-primary {
-    background-image: linear-gradient(to right, #373b44, #4286f4);
+.bg-twitter {
+    color: white;
+    background-color: #1DA1F2;
+}
+
+.bg-github {
+    color: white;
+    background-color: #8240a1;
+}
+
+.bg-github:hover {
+    color: white;
+    background-color: #6e2d8e;
+}
+
+.bg-steam {
+    color: white;
+    background-color: #115e87;
+}
+
+.bg-windows {
+    color: white;
+    background-color: #00adef;
+}
+
+.bg-windows:hover {
+    color: white;
+    background-color: #0097d6;
+}
+
+.bg-linux {
+    color: white;
+    background-color: #dd4814;
+}
+
+.bg-linux:hover {
+    color: white;
+    background-color: #c63d11;
+}
+
+.bg-custom {
+    background: linear-gradient(90deg, #6a64bc, #e45ced);
 }

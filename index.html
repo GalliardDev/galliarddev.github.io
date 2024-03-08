@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light">
+<html data-bs-theme="dark">
 
 <head>
     <title>Inicio</title>
@@ -7,6 +7,8 @@
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script>include("layout/head.html", "head")</script>
     <script>
         contasocListener();
@@ -20,11 +22,12 @@
         <script>include("layout/nav.html", "header")</script>
         <script>setPfp()</script>
     </header>
+    <button id="btnSwitch" class="btn float-end me-2"><h4 class="p-0 m-0">☀️</h4></button>
     <main class="row">
-        <section class="col-sm-12 row justify-content-center mb-5 mt-5 ms-0">
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+        <section class="col-sm-12 row justify-content-center mb-3 mt-3 ms-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4 p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>Contasoc</h2>
+                    <h2 class="p-0 m-0">Contasoc</h2>
                     <span class="badge bg-danger ms-2">v6.4.2</span>
                 </div>
                 <div class="card-body p-4">
@@ -34,19 +37,20 @@
                         La Salud-Bellavista. Algunas de las tecnologías usadas son MariaDB, Swing e iTextPDF.</p>
                 </div>
                 <div class="card-footer p-0 btn-group">
-                    <a class="btn btn-primary rounded-0" id="contasocWindows"><i
+                    <a class="btn bg-windows rounded-0" id="contasocWindows"><i
                             class="fab fa-2x fa-windows me-2"></i></a>
-                    <a class="btn btn-success rounded-0" id="contasocLinux"><i class="fab fa-2x fa-linux me-2"></i></a>
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/Contasoc"><i
+                    <a class="btn bg-linux rounded-0" id="contasocLinux"><i 
+                            class="fab fa-2x fa-linux me-2"></i></a>
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/Contasoc"><i
                             class="fab fa-2x fa-github me-2"></i></a>
-                    <a class="btn btn-secondary rounded-0" href="https://docs.galliard.dev/contasoc/index.html"><i
+                    <a class="btn btn-dark rounded-0" href="https://docs.galliard.dev/contasoc/index.html"><i
                             class="fa fa-2x fa-book me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>Amodgus</h2>
+                    <h2 class="p-0 m-0">Amodgus</h2>
                     <span class="badge bg-danger ms-2">v1.3.1</span>
                 </div>
                 <div class="card-body p-4">
@@ -58,16 +62,16 @@
                     <a class="btn btn-primary rounded-0"
                         href="https://legacy.curseforge.com/minecraft/mc-mods/amodgus"><i
                             class="fa fa-2x fa-download me-2"></i></a>
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/Amodgus"><i
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/Amodgus"><i
                             class="fab fa-2x fa-github me-2"></i></a>
-                    <a class="btn btn-secondary rounded-0" href="https://docs.galliard.dev/amodgus/"><i
+                    <a class="btn btn-dark rounded-0" href="https://docs.galliard.dev/amodgus/"><i
                             class="fa fa-2x fa-book me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>LSI Syntax for VSCode</h2>
+                    <h2 class="p-0 m-0">LSI Syntax for VSCode</h2>
                     <span class="badge bg-danger ms-2">v0.0.1</span>
                 </div>
                 <div class="card-body p-4">
@@ -78,15 +82,15 @@
                 </div>
                 <div class="card-footer p-0 btn-group">
                     <a class="btn btn-primary rounded-0" id="lsiSyntax" href=""><i
-                        class="fa fa-2x fa-download me-2"></i></a>
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/LSI-Syntax-for-VSCode"><i
+                            class="fa fa-2x fa-download me-2"></i></a>
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/LSI-Syntax-for-VSCode"><i
                             class="fab fa-2x fa-github me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>SimpleTools</h2>
+                    <h2 class="p-0 m-0">SimpleTools</h2>
                     <span class="badge bg-danger ms-2">v2.4.1</span>
                 </div>
                 <div class="card-body p-4">
@@ -99,16 +103,16 @@
                     <a class="btn btn-primary rounded-0"
                         href="https://www.spigotmc.org/resources/simpletools.108067/"><i
                             class="fa fa-2x fa-download me-2"></i></a>
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/SimpleTools"><i
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/SimpleTools"><i
                             class="fab fa-2x fa-github me-2"></i></a>
-                    <a class="btn btn-secondary rounded-0" href="https://docs.galliard.dev/simpletools/"><i
+                    <a class="btn btn-dark rounded-0" href="https://docs.galliard.dev/simpletools/"><i
                             class="fa fa-2x fa-book me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>Práctica Individual 3</h2>
+                    <h2 class="p-0 m-0">Práctica Individual 3</h2>
                     <span class="badge bg-danger ms-2">v1.0.0</span>
                 </div>
                 <div class="card-body p-4">
@@ -119,14 +123,14 @@
                         Interacciones.</p>
                 </div>
                 <div class="card-footer p-0 btn-group">
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/PI3"><i
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/PI3"><i
                             class="fab fa-2x fa-github me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>Práctica Individual 2</h2>
+                    <h2 class="p-0 m-0">Práctica Individual 2</h2>
                     <span class="badge bg-danger ms-2">v1.0.0</span>
                 </div>
                 <div class="card-body p-4">
@@ -137,14 +141,14 @@
                         MatPlotLib4J.</p>
                 </div>
                 <div class="card-footer p-0 btn-group">
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/PI2"><i
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/PI2"><i
                             class="fab fa-2x fa-github me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>Práctica Individual 1</h2>
+                    <h2 class="p-0 m-0">Práctica Individual 1</h2>
                     <span class="badge bg-danger ms-2">v1.0.0</span>
                 </div>
                 <div class="card-body p-4">
@@ -155,14 +159,14 @@
                     </p>
                 </div>
                 <div class="card-footer p-0 btn-group">
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/PI1"><i
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/PI1"><i
                             class="fab fa-2x fa-github me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>Proyecto Java</h2>
+                    <h2 class="p-0 m-0">Proyecto Java</h2>
                     <span class="badge bg-danger ms-2">v1.0.0</span>
                 </div>
                 <div class="card-body p-4">
@@ -173,14 +177,14 @@
                         Ficheros, etc.</p>
                 </div>
                 <div class="card-footer p-0 btn-group">
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/proyecto-java-2c-ic2-1"><i
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/proyecto-java-2c-ic2-1"><i
                             class="fab fa-2x fa-github me-2"></i></a>
                 </div>
             </article>
 
-            <article class="card col-sm-6 col-md-4 col-lg-3 mb-5 mx-4 shadow p-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4  p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
-                    <h2>Proyecto Python</h2>
+                    <h2 class="p-0 m-0">Proyecto Python</h2>
                     <span class="badge bg-danger ms-2">v1.0.0</span>
                 </div>
                 <div class="card-body p-4">
@@ -191,14 +195,22 @@
                         objetivos varios.</p>
                 </div>
                 <div class="card-footer p-0 btn-group">
-                    <a class="btn btn-dark rounded-0" href="https://github.com/GalliardDev/proyecto-python-1c-ic2-1"><i
+                    <a class="btn bg-github rounded-0" href="https://github.com/GalliardDev/proyecto-python-1c-ic2-1"><i
                             class="fab fa-2x fa-github me-2"></i></a>
                 </div>
             </article>
         </section>
     </main>
+    <div id="social-buttons" class="d-md-none text-center mb-5">
+        <a href="https://twitter.com/GalliardDev" class="me-3 btn btn-lg bg-twitter"><i class="fab fa-lg fa-twitter"></i></a>
+        <a href="https://github.com/GalliardDev" class="me-3 btn btn-lg bg-github"><i class="fab fa-lg fa-github"></i></a>
+        <a href="https://steamcommunity.com/id/GalliardDev/" class="btn btn-lg bg-steam"><i class="fab fa-lg fa-steam"></i></a>
+    </div>
+    <script>
+        include("layout/footer.html", "body")
+        //setHeaderColor();
+        colorThemeListener();
+    </script>
 </body>
-<script>include("layout/footer.html", "body")</script>
-<script>setHeaderColor()</script>
 
 </html>
