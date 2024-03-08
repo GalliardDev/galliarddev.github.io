@@ -3,6 +3,11 @@
     background-color: #1DA1F2;
 }
 
+.bg-twitter:hover {
+    color: white;
+    background-color: #0d91e0;
+}
+
 .bg-github {
     color: white;
     background-color: #8240a1;
@@ -16,6 +21,11 @@
 .bg-steam {
     color: white;
     background-color: #115e87;
+}
+
+.bg-steam:hover {
+    color: white;
+    background-color: #0f4f6f;
 }
 
 .bg-windows {
