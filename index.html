@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="dark">
+<html data-bs-theme="light">
 
 <head>
     <title>Inicio</title>
@@ -7,8 +7,6 @@
     <script src="js/scripts.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
-    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script>include("layout/head.html", "head")</script>
     <script>
         contasocListener();
@@ -17,16 +15,12 @@
 </head>
 
 <body class="container-fluid">
-    <header class="row">
-        <script>
-            include("layout/header.html", "header");
-            include("layout/nav.html", "header");
-            //setPfp();
-        </script>
-    </header>
-    <button id="btnSwitch" class="btn mb-3"><h4 class="p-0 m-0">☀️</h4></button>
+    <script>
+        include("layout/header.html", "body");
+        include("layout/nav.html", "body");
+    </script>
     <main class="row">
-        <section class="col-sm-12 row justify-content-center mb-3 mt-0 ms-0">
+        <section class="col-sm-12 row justify-content-center mt-5 mb-5 ms-0">
             <article class="card col-sm-9 col-md-5 col-lg-3 mb-5 mx-4 p-0 rounded-0">
                 <div class="card-header d-flex align-items-center">
                     <h2 class="p-0 m-0">Contasoc</h2>
@@ -210,8 +204,7 @@
     </div>
     <script>
         include("layout/footer.html", "body")
-        //setHeaderColor();
-        colorThemeListener();
+        setBgColor();
     </script>
 </body>
 

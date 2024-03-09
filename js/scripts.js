@@ -45,12 +45,12 @@ function getRandomElement(array) {
     return array[Math.floor(Math.random() * array.length)];
 }
 
-function setHeaderColor() {
+function setBgColor() {
     document.addEventListener('DOMContentLoaded', () => {
-        let header = document.getElementById('header');
+        let body = document.querySelector('body');
         let color1 = getRandomColor();
         let color2 = getRandomColor();
-        header.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+        body.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
     });
 }
 
@@ -61,41 +61,4 @@ function getRandomColor() {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-}
-
-
-async function setPfp() {
-    const token = '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'; // Reemplaza 'TU_TOKEN_DE_ACCESO_PERSONAL' con tu propio token
-    const headers = {
-        'Authorization': `Bearer ${token}`
-    };
-
-    try {
-        const response = await fetch('https://api.github.com/user', {
-            headers: headers
-        });
-
-        if (response.ok) {
-            const userData = await response.json();
-            const pfp = document.getElementById('pfp');
-            pfp.src = userData.avatar_url;
-        } else {
-            console.error('Error al obtener los datos del usuario:', response.status);
-        }
-    } catch (error) {
-        console.error('Error al obtener los datos del usuario:', error.message);
-    }
-}
-
-function colorThemeListener() {
-    document.getElementById('btnSwitch').addEventListener('click',()=>{
-        if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
-            document.documentElement.setAttribute('data-bs-theme','light')
-            document.getElementById('btnSwitch').innerHTML = '<h4 class="p-0 m-0">🌙</h4>';
-        }
-        else {
-            document.documentElement.setAttribute('data-bs-theme','dark')
-            document.getElementById('btnSwitch').innerHTML = '<h4 class="p-0 m-0">☀️</h4>';
-        }
-    })
 }
