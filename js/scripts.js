@@ -41,24 +41,32 @@ async function lsiSyntaxListener() {
     });
 }
 
-function getRandomElement(array) {
-    return array[Math.floor(Math.random() * array.length)];
-}
-
-function setBgColor() {
+/**function animatedGradientBackground() {
     document.addEventListener('DOMContentLoaded', () => {
-        let body = document.querySelector('body');
-        let color1 = getRandomColor();
-        let color2 = getRandomColor();
-        body.style.background = `linear-gradient(to right, ${color1}, ${color2})`;
+        let header = document.getElementById('header');
+        let degree = 0;
+        setInterval(() => {
+            header.style.background = `linear-gradient(${degree}deg, #c90cce, #166ed1)`;
+            degree = (degree + 1) % 360;
+        }, 100);
     });
-}
+} */
 
-function getRandomColor() {
-    let letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
+function animatedGradientBackground() {
+    document.addEventListener('DOMContentLoaded', () => {
+        let header = document.getElementById('header');
+        let hue = 0;
+
+        setInterval(() => {
+            // Increase the hue value
+            hue = (hue + 1) % 360;
+
+            // Create a gradient with two colors: the current hue and the hue 180 degrees apart
+            let color1 = `hsl(${hue}, 100%, 50%)`;
+            let color2 = `hsl(${(hue + 180) % 360}, 100%, 50%)`;
+
+            // Set the gradient background
+            header.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
+        }, 50);
+    });
 }

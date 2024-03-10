@@ -49,10 +49,10 @@
 }
 
 .bg-custom {
-    background: linear-gradient(90deg, #6a64bc, #e45ced);
+    background: linear-gradient(90deg, #c90cce, #166ed1);
 }
 
-.bg-lessdark {
-    color: white;
-    background-color: #2f2f2f;
+body {
+    background: url('../assets/images/bg6.gif') no-repeat center center fixed;
+    background-size: cover;
 }
