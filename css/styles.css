@@ -115,16 +115,56 @@
 
 .bg-google {
     /*background-color: #4a89f3;*/
-    background-color: #1f4179;
+    background-color: #4b8bf3;
 }
 
 .bg-google:hover {
     /*background-color: #3362b3;*/
-    background-color: #1f4179;
+    background-color: #3b6cbb;
 }
 
 #isDisabled {
     cursor: not-allowed;
+}
+
+.aboutme-pfp {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #fff;
+}
+
+.custom-badge {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.red-purple {
+    background: linear-gradient(-45deg, red, purple);
+}
+
+.magenta-pink {
+    background: linear-gradient(-45deg, #cc8591, #aa30aa);
+}
+
+.purple-blue {
+    background: linear-gradient(-45deg, rgb(199, 29, 199), rgb(56, 56, 245));
+}   
+
+.yellow-orange {
+    background: linear-gradient(-45deg, #fd7a00, #d6b10b);
+}  
+
+.green-lime {
+    background: linear-gradient(-45deg, rgb(52, 168, 52), #215c21);
+}
+
+.bg-second {
+    color: rgb(162, 163, 177);
+}
+
+.bg-third {
+    color: #99612c;
 }
 
 body {

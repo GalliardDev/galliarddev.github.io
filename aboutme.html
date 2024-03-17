@@ -1,15 +1,127 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sobre mí</title>
-        <script src="js/include.js"></script>
-        <script>include("layout/head.html", "head")</script>
-    </head>
-    <body class="container text-center mt-5">
-        <div class="alert alert-warning">
-            <h1 class="display-1">Página en construcción</h1>
-            <h6 class="display-6">Estará disponible próximamente</h6>  
-            <button class="btn btn-primary" onclick="window.history.back()">Volver</button> 
-        </div>     
-    </body>
+<html data-bs-theme="dark">
+
+<head>
+    <title>Sobre mí</title>
+    <script src="js/include.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>include("layout/head.html", "head")</script>
+    <script>
+        contasocListener();
+        lsiSyntaxListener();
+    </script>
+</head>
+
+<body class="container-fluid">
+    <script>
+        include("layout/header.html", "body");
+        include("layout/nav.html", "body");
+    </script>
+    <main class="row">
+        <section class="col-sm-12 row justify-content-center mt-5 mb-5 ms-0">
+            <article class="card col-sm-11 mb-md-5 mx-4 p-0 rounded-0v">
+                <div class="card-header d-flex align-items-center">
+                    <h2 class="p-0 m-0">¿Quién soy?</h2>
+                </div>
+                <div class="card-body row p-5 align-items-center justify-content-center">
+                    <img src="assets/images/pfp_512.png" alt="Pfp"
+                        class="img-fluid aboutme-pfp rounded-pill p-0 mb-5 col-sm-12 col-md-2 col-lg-2">
+                    <div class="col-sm-12 col-md-10 p-0 m-0">
+                        <h1 class="ms-md-4">
+                            Hola, soy Jose.
+                        </h1>
+                        <hr class="ms-md-4">
+                        <p class="ms-md-4">
+                            Soy un estudiante de Ingeniería Informática concretamente la rama de Ingeniería
+                            de Computadores en la Escuela Técnica Superior de Ingeniería Informática de la Universidad
+                            de Sevilla. Esta web sirve básicamente como portafolio de mis proyectos y para practicar las cositas de
+                            HTML, CSS (y bootstrap) y JavaScript que doy en clase XD.
+                        </p>
+                        <h3 class="ms-md-4">
+                            Hobbies
+                        </h3>
+                        <hr class="ms-md-4">
+                        <p class="ms-md-4">
+                            <span class="badge custom-badge red-purple me-3 mb-3">
+                                <i class="fas fa-gamepad me-2"></i> Videojuegos
+                            </span>
+                            <span class="badge custom-badge green-lime me-3 mb-3">
+                                <i class="fas fa-music me-2"></i> Música
+                            </span>
+                            <span class="badge custom-badge magenta-pink me-3 mb-3">
+                                <i class="fas fa-user-ninja me-2"></i> Anime
+                            </span>
+                            <span class="badge custom-badge purple-blue me-3 mb-3">
+                                <i class="fas fa-code me-2"></i> Programación
+                            </span>
+                            <span class="badge custom-badge yellow-orange">
+                                <i class="fas fa-microchip me-2"></i> Electrónica
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col-sm-12 mt-4 p-0 m-0">
+                        <h3>
+                            Lenguajes aprendidos
+                        </h3>
+                        <hr>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <strong>#1&emsp;</strong>Python
+                              <span class="badge bg-success ms-3">Decente</span>
+                            </li>
+                            <li class="list-group-item">
+                              <strong>#2&emsp;</strong>Java
+                              <span class="badge bg-success ms-3">Decente</span>
+                            </li>
+                            <li class="list-group-item">
+                              <strong>#3&emsp;</strong>Ensamblador
+                              <span class="badge bg-warning ms-3">Medio</span>
+                            </li>
+                            <li class="list-group-item">
+                              <strong>#4&emsp;</strong>JavaScript
+                              <span class="badge bg-warning ms-3">Medio</span>
+                            </li>
+                            <li class="list-group-item">
+                              <strong>#5&emsp;</strong>C/C++
+                              <span class="badge bg-danger ms-3">Básico</span>
+                            </li>
+                          </ul>               
+                    </div>
+                    <div class="col-sm-12 mt-4 p-0 m-0">
+                        <h3>
+                            Mi top de animes
+                        </h3>
+                        <hr>
+                        <ul class="list-group">
+                            <li class="list-group-item p-3"><i class="fa-solid fa-trophy text-warning me-3"></i>Shingeki no Kyojin</li>
+                            <li class="list-group-item p-3"><i class="fa-solid fa-medal bg-second me-3"></i>Jujutsu Kaisen</li>
+                            <li class="list-group-item p-3"><i class="fa-solid fa-medal bg-third me-3"></i>One Piece</li>
+                            <li class="list-group-item p-3">JoJo's Bizarre Adventures</li>
+                            <li class="list-group-item p-3">Spy X Family</li>
+                            <li class="list-group-item p-3">Kimi wa Houkago no Insomniacs</li>
+                            <li class="list-group-item p-3">Ousama Ranking</li>
+                            <li class="list-group-item p-3">Kimetsu no Yaiba</li>
+                            <li class="list-group-item p-3">Black Clover</li>
+                        </ul>        
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="social-buttons" class="d-md-none col-sm-12 row justify-content-center mt-5 mb-5 ms-0">
+            <a href="https://twitter.com/GalliardDev" class="col-2 me-4 btn btn-lg bg-twitter"><i
+                    class="fab fa-lg fa-twitter"></i></a>
+            <a href="https://github.com/GalliardDev" class="col-2 me-4 btn btn-lg bg-github"><i
+                    class="fab fa-lg fa-github"></i></a>
+            <a href="https://steamcommunity.com/id/GalliardDev/" class="col-2 me-4 btn btn-lg bg-steam"><i
+                    class="fab fa-lg fa-steam"></i></a>
+        </section>
+    </main>
+    <script>
+        include("layout/footer.html", "body")
+        animatedGradientBackground();
+    </script>
+</body>
+
 </html>
