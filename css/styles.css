@@ -113,6 +113,20 @@
     background-color: #ff4102;
 }
 
+.bg-google {
+    /*background-color: #4a89f3;*/
+    background-color: #1f4179;
+}
+
+.bg-google:hover {
+    /*background-color: #3362b3;*/
+    background-color: #1f4179;
+}
+
+#isDisabled {
+    cursor: not-allowed;
+}
+
 body {
     background: url('../assets/images/bg6.gif') no-repeat center center fixed;
     background-size: cover;
