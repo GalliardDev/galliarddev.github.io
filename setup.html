@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+
+<head>
+    <title>Inicio</title>
+    <script src="js/include.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>include("layout/head.html", "head")</script>
+    <script>
+        contasocListener();
+        lsiSyntaxListener();
+    </script>
+</head>
+
+<body class="container-fluid">
+    <script>
+        include("layout/header.html", "body");
+        include("layout/nav.html", "body");
+    </script>
+    <main class="row">
+        <section class="col-sm-12 row justify-content-center mt-5 mb-5 ms-0">
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-md-5 mx-4  p-0 rounded-0v">
+                <div class="card-header d-flex align-items-center">
+                    <h2 class="p-0 m-0">Mi PC</h2>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <img src="assets/images/pc.jpg" alt="PYTHON" class="img-fluid">
+                </div>
+                <div class="card-footer p-3">
+                    <span class="badge bg-ryzen text-white bg-gradient">Ryzen 7 5800X</span>
+                    <span class="badge bg-msi bg-gradient">MSI RTX 4070 X TRIO 12GB</span>
+                    <span class="badge bg-seagate bg-gradient text-dark">Seagate Barracuda 1TB 7200RPM</span>
+                    <span class="badge bg-intel bg-gradient">Intel WiFi 6 AX200</span>
+                    <span class="badge bg-msi bg-gradient">MSI Spatium M470 1TB</span>
+                    <span class="badge bg-msi bg-gradient">MSI MPG B550 Gaming Plus</span>
+                    <span class="badge bg-white bg-gradient text-dark">Corsair VS650 80+ White</span>
+                    <span class="badge bg-bequiet bg-gradient text-dark">Bequiet Pure Base 500DX</span>
+                    <span class="badge bg-noctua bg-gradient">Noctua NH-D15 chromax.black</span>
+                    <span class="badge bg-gskill bg-gradient">G.Skill 32GB 3200MHz</span>
+                </div>
+            </article>
+            <article class="card col-sm-9 col-md-5 col-lg-3 mb-md-5 mx-4  p-0 rounded-0v">
+                <div class="card-header d-flex align-items-center">
+                    <h2 class="p-0 m-0">Resto del setup</h2>
+                </div>
+                <div class="card-body p-0 m-0">
+                    <img src="assets/images/setup.png" alt="PYTHON" class="img-fluid">
+                </div>
+                <div class="card-footer p-3">
+                    <span class="badge bg-logitech text-dark bg-gradient">Logitech G915 TKL Lightspeed</span>
+                    <span class="badge bg-logitech text-dark bg-gradient">Logitech G502 Hero Wireless</span>
+                    <span class="badge bg-hyperx bg-gradient">HyperX Cloud Alpha</span>
+                    <span class="badge bg-bluemics bg-gradient">Blue Yeti</span>
+                    <span class="badge bg-elgato bg-gradient">Elgato Streamdeck</span>
+                    <span class="badge bg-playstation bg-gradient">Dualsense</span>
+                    <span class="badge bg-logitech bg-gradient text-dark">Logitech G840 XL</span>
+                    <span class="badge bg-msi bg-gradient">MSI G27CQ4 27" 165Hz</span>
+                    <span class="badge bg-benq bg-gradient">2 x BenQ GL2480</span>
+                    <span class="badge bg-bose bg-gradient">BOSE Companion 2</span>
+                    <span class="badge bg-omen bg-gradient">OMEN Citadel</span>
+                    <span class="badge bg-omen bg-gradient">HP OMEN 16 Ryzen 7 5800H 3050Ti</span>
+                </div>
+            </article>
+        </section>
+        <section id="social-buttons" class="d-md-none col-sm-12 row justify-content-center mt-5 mb-5 ms-0">
+            <a href="https://twitter.com/GalliardDev" class="col-2 me-4 btn btn-lg bg-twitter"><i class="fab fa-lg fa-twitter"></i></a>
+            <a href="https://github.com/GalliardDev" class="col-2 me-4 btn btn-lg bg-github"><i class="fab fa-lg fa-github"></i></a>
+            <a href="https://steamcommunity.com/id/GalliardDev/" class="col-2 me-4 btn btn-lg bg-steam"><i class="fab fa-lg fa-steam"></i></a>
+        </section>
+    </main>
+    <script>
+        include("layout/footer.html", "body")
+        animatedGradientBackground();
+    </script>
+</body>
+
+</html>

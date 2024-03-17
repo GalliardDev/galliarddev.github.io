@@ -52,6 +52,67 @@
     background: linear-gradient(90deg, #c90cce, #166ed1);
 }
 
+.bg-ryzen {
+    background-color: #ff430c;
+}
+
+.bg-msi {
+    background-color: #ed1b24;
+}
+
+.bg-gskill {
+    background: #c40803;
+}
+
+.bg-seagate {
+    background-color: #89be52;
+
+}
+
+.bg-bequiet {
+    background-color: #fc973a;
+}
+
+.bg-noctua {
+    background-color: #541704;
+}
+
+.bg-intel {
+    background-color: #0072c6;
+}
+
+.bg-logitech {
+    background-color: #00b9fc;
+}
+
+.bg-hyperx {
+    background-color: #db1c36;
+}
+
+.bg-bluemics {
+    background-color: #153d95;
+}
+
+.bg-elgato {
+    background-color: #204cfe;
+}
+
+.bg-playstation {
+    background-color: #0070d1;
+}
+
+.bg-benq {
+    background-color: #784f9d;
+}
+
+.bg-bose {
+    background-color: #191919;
+}
+
+.bg-omen {
+    background-color: #ff4102;
+}
+
 body {
     background: url('../assets/images/bg6.gif') no-repeat center center fixed;
     background-size: cover;
