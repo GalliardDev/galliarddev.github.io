@@ -44,39 +44,17 @@ async function lsiSyntaxListener() {
 function animatedGradientBackground() {
     document.addEventListener('DOMContentLoaded', () => {
         let header = document.getElementById('header');
-        let hue = 0;
-
-        setInterval(() => {
-            // Increase the hue value
+        let hue = localStorage.getItem('hue') || 0; // obtiene del almacenamiento local si no 0
+        hue = parseInt(hue); 
+        const updateBackground = () => {
             hue = (hue + 1) % 360;
-
-            // Create a gradient with two colors: the current hue and the hue 180 degrees apart
+            localStorage.setItem('hue', hue); // guarda en almacenamiento local
             let color1 = `hsl(${hue}, 100%, 50%)`;
             let color2 = `hsl(${(hue + 180) % 360}, 100%, 50%)`;
-
-            // Set the gradient background
             header.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
-        }, 50);
+        };
+        updateBackground();
+
+        setInterval(updateBackground, 50);
     });
 }
-
-function setActiveLink() {
-    window.addEventListener('DOMContentLoaded', () => { // Cambiado a 'DOMContentLoaded'
-        let links = document.querySelectorAll('a.nav-link');
-        let currentPath = window.location;
-
-        links.forEach(link => {
-            console.log(link.href.toString());
-            console.log(currentPath.toString());
-            if (link.href === currentPath) { // Cambiado a 'pathname'
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
-        });
-    });
-
-    window.addEventListener('popstate', setActiveLink); // Agregado para manejar cambios en la ruta
-}
-
-setActiveLink();
