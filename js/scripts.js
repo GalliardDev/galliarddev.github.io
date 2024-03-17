@@ -41,17 +41,6 @@ async function lsiSyntaxListener() {
     });
 }
 
-/**function animatedGradientBackground() {
-    document.addEventListener('DOMContentLoaded', () => {
-        let header = document.getElementById('header');
-        let degree = 0;
-        setInterval(() => {
-            header.style.background = `linear-gradient(${degree}deg, #c90cce, #166ed1)`;
-            degree = (degree + 1) % 360;
-        }, 100);
-    });
-} */
-
 function animatedGradientBackground() {
     document.addEventListener('DOMContentLoaded', () => {
         let header = document.getElementById('header');
@@ -70,3 +59,24 @@ function animatedGradientBackground() {
         }, 50);
     });
 }
+
+function setActiveLink() {
+    window.addEventListener('DOMContentLoaded', () => { // Cambiado a 'DOMContentLoaded'
+        let links = document.querySelectorAll('a.nav-link');
+        let currentPath = window.location;
+
+        links.forEach(link => {
+            console.log(link.href.toString());
+            console.log(currentPath.toString());
+            if (link.href === currentPath) { // Cambiado a 'pathname'
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+
+    window.addEventListener('popstate', setActiveLink); // Agregado para manejar cambios en la ruta
+}
+
+setActiveLink();
